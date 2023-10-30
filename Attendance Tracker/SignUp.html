@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Create an account</title>
+        <meta name=""description" content="Create an account for Attendance Tracker">
+        <link rel="stylesheet" href="signupcss.css"/>
+    </head>
+    <body>
+        <section>
+            <div>
+                <form method="post" style="border:3px solid #ccc">
+                    <div class="container">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="email" placeholder="Enter Email" name="Input-email" required>
+
+                      <label for="FirstName"><b>First Name</b></label>
+                      <input type="text" placeholder="Enter First Name" name="Input-FirstName" required>
+                      
+                      <label for="LastName"><b>Last Name</b></label>
+                      <input type="text" placeholder="Enter Last Name" name="Input-LastName" required>
+                       
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" id="InputPws" placeholder="Enter Password" name="Input-psw"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~=?\|>/])" required>
+                  
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~=?\|>/])"  required>
+                      <input type="checkbox" onclick="myFunction()">Show Password
+                    <!-- *---------------Need to enter to Javascript---* 
+                     function myFunction() {
+  var x = document.getElementById("InputPws");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password"; ---------------------------------------------->
+                        <p>Must contain at least: 1 number, 1 special number, 1 uppercase, 1 lowercase letter and at least 8 characters</p>
+                     <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div>
+                  </div>
+ 
